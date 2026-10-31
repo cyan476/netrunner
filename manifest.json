@@ -1,0 +1,9 @@
+{
+  "manifest_version": 3,
+  "name": "NetRunner",
+  "version": "1.0",
+  "description": "As the name implies, a runner on the net.",
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  }
+}

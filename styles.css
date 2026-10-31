@@ -1,0 +1,27 @@
+body {
+    background-image: url('wallpaper.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+}
+.taskbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border-radius: 16px 16px 0 0;
+}
+.start-button img {
+  width: 38px;
+  height: 38px;
+  display: block;
+}
+.start-button {
+  background: transparent;
+  border: 0;
+  padding: 6px;
+}
