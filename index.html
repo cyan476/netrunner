@@ -3,16 +3,48 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>NetRunner OS</title>
+  <title>NetRunner</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <main>
+    <div id="start-menu" class="start-menu hidden">
+      <div class="start-sidebar-pill">
+        <button class="nav-icon" title="User Profile">👤</button>
+        <button class="nav-icon" title="Settings">⚙️</button>
+        <button class="nav-icon" title="Power">🔌</button>
+      </div>
+
+      <div class="start-content-box">
+        <div class="start-search">
+          <input type="text" placeholder="Search" />
+        </div>
+
+        <div class="start-pinned">
+          <span class="section-label">Pinned Icons</span>
+          <div class="start-apps-grid">
+            <button class="app-item" data-app="terminal">
+              <span class="app-icon">💻</span>
+              <span>Terminal</span>
+            </button>
+            <button class="app-item" data-app="browser">
+              <span class="app-icon">🌐</span>
+              <span>Browser</span>
+            </button>
+            <button class="app-item" data-app="files">
+              <span class="app-icon">📁</span>
+              <span>Files</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="taskbar">
-        <button class="start-button" aria-label="Start">
+        <button class="start-button" aria-label="Start" id="start-btn">
             <img src="start-icon.png" alt="Start">
         </button>
     </div>
   </main>
+<script src="script.js"></script>
 </body>
 </html>
